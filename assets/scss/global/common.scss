@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Ubuntu&display=swap');
+@import './vars.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+  html,
+  body, 
+  #__nuxt, #__layout {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .content {
+    flex: 1 0 auto;
+    padding:  0 0 200px 0;
+
+    @media (max-width: $tablet) {
+      padding: 0 0 100px 0;
+    }
+  }
+  .footer {
+    flex: 0 0 auto;
+  }
+
+.inner {
+    max-width: 1372px;
+    width: 100%;
+    padding: 0 16px;
+    margin: auto;
+
+    &--s {
+        max-width: 914px;
+    }
+
+    &--dark {
+      background-color: $main;
+      color: $white;
+    }
+}
+
+ul {
+    list-style: none;
+}

@@ -1,0 +1,41 @@
+.subscribe {
+    padding: 27px 30px;
+    background: $main;
+    color: white;
+    display: flex;
+    margin: 0 0 100px 0;
+    justify-content: space-between;
+
+    &--no-margin {
+        margin: 0;
+    }
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__text {
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 137%;
+    }
+    &__form{
+        display: flex;
+        gap: 36px;
+
+        @media (max-width: $mobail) {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__input{
+        border: none;
+        border-bottom: 1px solid $grey;
+        max-width: 353px;
+        color: $grey;
+        background: #000;
+        height: 100%;
+        width: 100%;
+        padding: 0 8px;
+    }
+}

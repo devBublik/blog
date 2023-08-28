@@ -1,0 +1,62 @@
+.slider {
+    margin: auto;
+    margin: 0 0 60px 0;
+    text-align: center;
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+        width: 60px;
+        height: 60px;
+        background: $black;
+        position: absolute;
+
+        @media (max-width: $mobail) {
+            width: 40px;
+            height: 40px;
+        }
+        @media (max-width: $sm-mobail) {
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+    .swiper-button-prev {
+        left: 0;
+        top: 40%;
+        &::after {
+            color: $white;
+            @media (max-width: $mobail) {
+                font-size: 20px;
+            }
+            @media (max-width: $sm-mobail) {
+                font-size: 14px;
+            }
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+        top: 40%;
+        &::after {
+            color: $white;
+            @media (max-width: $mobail) {
+                font-size: 20px;
+            }
+            @media (max-width: $sm-mobail) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        padding: 0 0 50px 0;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-slide img{
+        width: 80%;
+    }
+}
+
