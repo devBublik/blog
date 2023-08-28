@@ -4,6 +4,8 @@ import dsv from "@rollup/plugin-dsv";
 import pugPlugin from "vite-plugin-pug";
 
 export default defineNuxtConfig({
+  target: 'static',
+  ssr: false,
   css: ["@/assets/scss/main.scss"],
   vite: {
     plugins: [dsv(), pugPlugin()],
